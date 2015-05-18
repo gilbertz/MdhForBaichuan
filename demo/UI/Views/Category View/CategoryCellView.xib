@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="udf-v5-242" customClass="CategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="78" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="78" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-QQ-5Ru">
+                        <rect key="frame" x="0.0" y="0.0" width="3" height="46"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="Pb0-qT-4HZ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFr-En-ZCI">
+                        <rect key="frame" x="3" y="0.0" width="75" height="46"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="1YY-Gw-ZO5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R45-gM-c0J">
+                        <rect key="frame" x="0.0" y="45" width="78" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="abc-ju-vt5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxJ-Yg-kbj">
+                        <rect key="frame" x="77" y="0.0" width="1" height="46"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="L5r-pa-58N"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yFr-En-ZCI" secondAttribute="bottom" constant="0.5" id="9co-jm-eB5"/>
+                <constraint firstAttribute="trailing" secondItem="sxJ-Yg-kbj" secondAttribute="trailing" id="A7K-qC-7qx"/>
+                <constraint firstAttribute="trailing" secondItem="yFr-En-ZCI" secondAttribute="trailing" id="D5u-qS-ztg"/>
+                <constraint firstItem="YLR-QQ-5Ru" firstAttribute="top" secondItem="udf-v5-242" secondAttribute="top" id="Fhv-cz-KJb"/>
+                <constraint firstAttribute="trailing" secondItem="R45-gM-c0J" secondAttribute="trailing" id="FiT-1Z-rHb"/>
+                <constraint firstItem="R45-gM-c0J" firstAttribute="leading" secondItem="udf-v5-242" secondAttribute="leading" id="KAq-8p-kCZ"/>
+                <constraint firstItem="sxJ-Yg-kbj" firstAttribute="top" secondItem="udf-v5-242" secondAttribute="top" id="SYx-j8-1zi"/>
+                <constraint firstAttribute="bottom" secondItem="sxJ-Yg-kbj" secondAttribute="bottom" constant="0.5" id="d3I-Zc-fS7"/>
+                <constraint firstAttribute="bottom" secondItem="R45-gM-c0J" secondAttribute="bottom" id="gXt-K2-DyT"/>
+                <constraint firstItem="YLR-QQ-5Ru" firstAttribute="leading" secondItem="udf-v5-242" secondAttribute="leading" id="pxb-cd-kd6"/>
+                <constraint firstItem="yFr-En-ZCI" firstAttribute="top" secondItem="udf-v5-242" secondAttribute="top" id="qR1-B0-t1G"/>
+                <constraint firstAttribute="bottom" secondItem="YLR-QQ-5Ru" secondAttribute="bottom" constant="0.5" id="u2o-Ix-0LR"/>
+            </constraints>
+            <connections>
+                <outlet property="downLine" destination="R45-gM-c0J" id="krC-vw-6zC"/>
+                <outlet property="nameLabel" destination="yFr-En-ZCI" id="4Da-CR-PLv"/>
+                <outlet property="rightLine" destination="sxJ-Yg-kbj" id="RKt-Mb-J3I"/>
+                <outlet property="seletedView" destination="YLR-QQ-5Ru" id="HAy-dC-adI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

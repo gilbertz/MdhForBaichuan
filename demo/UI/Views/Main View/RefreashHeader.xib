@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RefreashHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3Z-Xq-bIT">
+                    <rect key="frame" x="128" y="8" width="65" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFi-n0-529">
+                            <rect key="frame" x="28" y="13" width="38" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="new_refreash_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-v8-Pr6">
+                            <rect key="frame" x="0.0" y="12" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="DgU-V1-sKU"/>
+                                <constraint firstAttribute="height" constant="20" id="Toe-zC-l9Z"/>
+                            </constraints>
+                        </imageView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MsM-Ba-tTT">
+                            <rect key="frame" x="0.0" y="12" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="jFi-n0-529" secondAttribute="centerY" id="0lu-td-1GD"/>
+                        <constraint firstItem="jFi-n0-529" firstAttribute="leading" secondItem="K4Y-v8-Pr6" secondAttribute="trailing" constant="8" id="Hdq-nd-AXd"/>
+                        <constraint firstAttribute="centerY" secondItem="K4Y-v8-Pr6" secondAttribute="centerY" id="MXx-EB-3ve"/>
+                        <constraint firstAttribute="height" constant="44" id="TFn-ds-AhJ"/>
+                        <constraint firstAttribute="trailing" secondItem="jFi-n0-529" secondAttribute="trailing" id="XqG-jZ-sVY"/>
+                        <constraint firstAttribute="centerY" secondItem="MsM-Ba-tTT" secondAttribute="centerY" id="ZVX-oE-xTX"/>
+                        <constraint firstItem="MsM-Ba-tTT" firstAttribute="leading" secondItem="K3Z-Xq-bIT" secondAttribute="leading" id="nmL-6w-zHZ"/>
+                        <constraint firstItem="K4Y-v8-Pr6" firstAttribute="leading" secondItem="K3Z-Xq-bIT" secondAttribute="leading" id="tc4-o7-mvo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlW-jA-1I4">
+                    <rect key="frame" x="0.0" y="59" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="hdD-gZ-tLj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZlW-jA-1I4" secondAttribute="trailing" id="MvC-h6-TUT"/>
+                <constraint firstAttribute="centerX" secondItem="K3Z-Xq-bIT" secondAttribute="centerX" id="SNc-TX-Ozj"/>
+                <constraint firstAttribute="bottom" secondItem="ZlW-jA-1I4" secondAttribute="bottom" id="Spa-Mf-Se8"/>
+                <constraint firstItem="ZlW-jA-1I4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a9l-4O-fnX"/>
+                <constraint firstItem="K3Z-Xq-bIT" firstAttribute="centerX" secondItem="ZlW-jA-1I4" secondAttribute="centerX" id="hSW-Ku-CII"/>
+                <constraint firstAttribute="bottom" secondItem="K3Z-Xq-bIT" secondAttribute="bottom" constant="8" id="nGq-q2-PQQ"/>
+                <constraint firstAttribute="centerX" secondItem="K3Z-Xq-bIT" secondAttribute="centerX" id="sQK-97-7dJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityView" destination="MsM-Ba-tTT" id="zha-1J-XzO"/>
+                <outlet property="arrowImageView" destination="K4Y-v8-Pr6" id="gAo-DY-P3t"/>
+                <outlet property="contentView" destination="K3Z-Xq-bIT" id="NfB-HT-qkF"/>
+                <outlet property="titleLabel" destination="jFi-n0-529" id="Hr9-cq-XBN"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_refreash_arrow" width="20" height="20"/>
+    </resources>
+</document>
